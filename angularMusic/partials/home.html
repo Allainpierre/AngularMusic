@@ -1,0 +1,40 @@
+<div class="wallpaper">
+	<div class="container animated fadeIn">
+		<h1 class="title">Bienvenue sur <i class="fa fa-headphones animated tada" aria-hidden="true"></i>&nbsp;AngularMusic</h1>
+		<div ng-controller="homeCtrl">
+			<div class="home">
+				<div class="col-md-3" ng-repeat="data in datas | filter : search | pagination: curPage * pageSize | limitTo: pageSize">
+					<a href="{{base_url}}#/albums/details/{{data.id}}">
+						<div class="box">
+							<ul class="list-artists">
+								<li><img src="{{data.cover_small}}" alt="cover_artists"></li>
+								<li><p>{{data.name}}</p></li>
+								<li><p>Populatité : {{data.popularity}}</p></li>
+							</ul>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div ng-show="datas.length">
+						<ul class="pagination pager">
+							<li>
+								<button class="btn btn-orange pull-left" type="button" ng-disabled="curPage == 0"
+								ng-click="curPage=curPage-1">Previous</button>
+							</li>
+							<li>
+								<span class="pull-center">{{curPage + 1}} of {{ numberOfPages() }}</span>
+							</li>
+							<li>
+								<button  class="btn btn-orange pull-right" type="button"
+								ng-disabled="curPage >= datas.length/pageSize - 1"
+								ng-click="curPage = curPage+1">Next</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

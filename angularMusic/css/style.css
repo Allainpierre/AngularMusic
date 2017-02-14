@@ -1,0 +1,152 @@
+body{
+	padding-top: 60px;
+}
+.home{
+	margin-top: 80px;
+}
+.justify{
+	text-align: justify;
+}
+.wallpaper{
+	width: 100%;
+	height: 300px;
+	margin-top: -10px;
+	background-image: url(../img/wallpaper.png);
+	background-position: center;
+	background-size: cover;
+}
+.title{
+	margin-top: 115px;
+	color:#fefefe;
+}
+.cco{
+	color: #ff5900;
+}
+.line{
+	width: 100%;
+	height: 1px;
+	background-color: #D5D5D5;
+	margin-bottom: 10px;
+}
+.fa-headphones{
+	color: #FF5900;
+}
+.list-artists{
+	max-height: 250px;
+	list-style: none;
+	padding-left: 0px;
+}
+.list-artists-details{
+	list-style: none;
+	padding-left: 0px;
+}
+.box{
+	padding: 10px;
+	border: 1px solid #ECECEC;
+	background-color: #F3F3F3;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+.details .box{
+	padding: 20px;
+	border: 1px solid #ECECEC;
+	background-color: #F3F3F3;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+.box .list-artist{
+	margin-bottom: 0px !important;
+}
+.list-artist p{
+	margin-top: 10px !important;
+	margin-bottom: 5px !important;
+}
+.list-artists img{
+	width: 100%;
+	height: 200px;
+	border-radius: 3px
+}
+.list-artists li{
+	text-align: center;
+}
+.list-artists-details img{
+	width: 100%;
+	border-radius: 3px
+}
+.list-artists-details li{
+	text-align: justify;
+}
+.list-artists table {
+	width: 80px;
+	height: 80px;
+}
+.list-artists table img{
+	width: 80px;
+	height: 80px;
+	padding-bottom: 0px;
+}
+.albumName{
+	text-align: center;
+}
+.artistsName{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+}
+.music{
+	width: 100%;
+}
+.music img{
+	height: 50px;
+}
+.music h4{
+	margin-left: 20px;
+}
+.music ul{
+	list-style: none;
+	margin-bottom: 0px !important;
+	padding-left: 0px;
+}
+.music li{
+	display: inline-block;
+}
+.music li:last-child{
+	display: inline !important;
+}
+.music audio{
+	margin-top: 10px;
+    margin-right: 10px;
+}
+.box-music{
+	padding: 0px;
+	border: 1px solid #ECECEC;
+	background-color: #F3F3F3;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+/* Track-Scrollbar */
+
+::-webkit-scrollbar {  
+    width: 7px;  
+}
+::-webkit-scrollbar-track {  
+    background-color: #aeaeae;  
+    border-right: 1px solid #ccc;  
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #7e7e7e;  
+}
+::-webkit-scrollbar-thumb:horizontal {  
+    background-color: #7e7e7e;  
+}
+
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #404040;  
+}
+::-webkit-scrollbar-track-piece {
+	background-color: #aeaeae;  
+    border-right: 1px solid #ccc;
+}
+::-webkit-scrollbar-corner {
+    background-color: #aeaeae;  
+}

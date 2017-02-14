@@ -1,0 +1,19 @@
+<div class="container">
+	<div ng-controller="tracksCtrl">
+		<div class="row">
+			<div class="col-md-12" ng-repeat="data in datas | filter : search">
+				<div class="box">
+					<ul class="list-artists">
+						<li><p>Nom de l'album : {{data.album_name}}</p></li>
+						<li><p>{{data.music_name}}</p></li>
+						<li><p>{{data.duration}} min</p></li>
+						<li><audio controls="controls">
+							<source src="{{data.mp3 | trusted }}" type="audio/mp3" preload="none" />
+							Votre navigateur n'est pas compatible.
+						</audio></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

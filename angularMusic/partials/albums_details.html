@@ -1,0 +1,26 @@
+<div class="container">
+	<div ng-controller="albums_detailsCtrl">
+		<div class="row">
+			<div class="col-md-12">
+			<div class="justify" ng-repeat="data in datas | limitTo: 1">
+				<h3>Album : {{data.name}} <small>| popularité : {{data.popularity}}</h3>
+				<div class="line"></div>
+				<p>{{data.description}}</p>
+				<div class="line"></div>				
+			</div>
+				<div class="box-music" ng-repeat="data in datas | filter : search">
+				<div class="music">
+					<ul>
+						<li><img src="{{data.cover}}" alt="cover"></li>
+						<li><h4>{{data.music_name}}</h4></li>
+						<li><audio controls="controls" class="pull-right">
+							<source ng-src="{{data.mp3 | trusted}}" preload="none" type="audio/mp3" />
+							Votre navigateur n'est pas compatible.
+						</audio></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

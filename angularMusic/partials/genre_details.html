@@ -1,0 +1,17 @@
+<div class="container">
+	<div ng-controller="genre_detailsCtrl">
+		<div class="row">
+			<div class="col-md-3" ng-repeat="data in datas | filter : search">
+				<a href="{{base_url}}#/albums/details/{{data.album_id}}">
+					<div class="box">
+						<ul class="list-artists">
+							<li><img src="{{data.cover_small}}"/></li>
+							<li><p>{{data.name}}</p></li>
+							<li><p>Populatité : {{data.popularity}}</p></li>
+						</ul>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

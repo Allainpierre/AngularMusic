@@ -1,0 +1,39 @@
+<div class="container">
+	<div ng-controller="artists_detailsCtrl">
+		<div class="row">
+			<div class="col-md-12 details">
+				<div class="box" ng-repeat="data in datas | limitTo: 1">
+					<ul class="list-artists-details">
+						<div class="row">
+							<div class="col-md-4">	
+								<img src="{{data.photo}}" alt="cover_artists"></li>
+								<p class="artistsName">{{data.name}}</p>
+								<p class="albumName">{{data.description}}</p>
+							</div>
+							<div class="col-md-8">
+								<li><h4>Biographie :</h4></li>
+								<li><p>{{data.bio}}</p></li>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-12 details">
+				<div class="box">
+					<h4>Ses albums :</h4>
+					<div class="row">	
+						<ul class="list-artists-details">
+							<div ng-repeat="data in datas">
+								<div class="col-md-2">
+									<a href="{{base_url}}#/albums/details/{{data.album_id}}" class="imgCover">
+										<img src="{{data.cover_small}}" alt="cover_albums"></li>
+										<p class="albumName">{{data.albums_name}}</p>
+									</a>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
